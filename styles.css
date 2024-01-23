@@ -142,13 +142,19 @@ a {
 			}
 			
 			#balance_edit-remove {
-				border: 1px solid;
+				/*border: 1px solid;*/
 				height: 75px;
 				width: 300px;
 				margin-left: 40px;
-				background-color: white;
+				/*background-color: white;*/
+				background-color: #FF6666;
 				float: left;
-				color: red;
+				/*color: red;*/
+				color:#FF6666;
+			}
+			
+			#balance_edit-remove h2{
+				color: Black;
 			}
 			
 			#balance h1{
