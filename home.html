@@ -11,66 +11,6 @@
 
 		<!-- Latest compiled JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-		<style>
-			#header {
-				border:1px solid;
-				height: 150px;
-			}
-				
-			
-				#balance {
-					border: 1px solid;
-					height: 200px;
-					width: 800px;
-					margin-left: auto;
-					margin-right: auto;
-					margin-top: 50px;
-					/*background-color: #5C9EAD;*/
-				}
-				#balance_info {
-					border: 1px solid;
-					height: 80px;
-					width: 800px;
-					margin-left: auto;
-					margin-right: auto;
-					margin-top: 0px;
-					/*background-color: #0D324D;*/
-				}
-					#balance_where {
-						border: 1px solid;
-						height: 75px;
-						width: 400px;
-						margin-left: 20px;
-						background-color: white;
-						float: left;
-					}
-					
-					#balance_edit-remove {
-						border: 1px solid;
-						height: 75px;
-						width: 300px;
-						margin-left: 40px;
-						background-color: white;
-						float: left;
-						color: red;
-					}
-				
-				#add_balance {
-					border: 1px solid;
-					height: 200px;
-					width: 800px;
-					margin-left: auto;
-					margin-right: auto;
-					margin-top: 50px;
-					/*background-color: #5C9EAD;*/
-					/*background-color:#5A5A5A;*/
-					background-color: #EDAE49;
-				}
-			
-			#setting-icon {
-				margin-top: 10px;
-			}
-		</style>
 	</head>
 	<body>
 		<div id="header">
@@ -88,32 +28,38 @@
 		
 		
 		<div id="content_home">
+			<!--<div id="back-panel">
+			</div>-->
+			
+			
 			<div id="balance">
 				<h1> Php 4.25 </h1>
-			</div>
-			<div id="balance_info">
-				<div id="balance_where">
-					<h2> MasterCard </h2>
-				</div>
-				<div id="balance_edit-remove">
-					<h2> REMOVE </h2>
+				
+				<div id="balance_info">
+					<div id="balance_where">
+						<h2> MasterCard </h2>
+					</div>
+					<div id="balance_edit-remove">
+						<h2> REMOVE </h2>
+					</div>
 				</div>
 			</div>
 			
 			<div id="balance">
 				<h1> Php 800.00 </h1>
-			</div>
-			<div id="balance_info">
-				<div id="balance_where">
-					<h2> RCBC </h2>
-				</div>
-				<div id="balance_edit-remove">
-					<h2> REMOVE </h2>
+				
+				<div id="balance_info">
+					<div id="balance_where">
+						<h2> RCBC </h2>
+					</div>
+					<div id="balance_edit-remove">
+						<h2> REMOVE </h2>
+					</div>
 				</div>
 			</div>
 			
-			<a href="addcredit.html"> <div id="add_balance">
-				<h3>add credit card</h3>
+			<a href="addcredit.html"> <div id="add_card">
+				<h3>ADD CREDIT CARD</h3>
 			</div></a>
 		</div>
 		
@@ -125,17 +71,25 @@
 		
 		
 		<div id="options">
-			<a href="convert.html"><div id="option_icons" class="col-xs-3">
-				<h3>convert</h3>
+			<a href="home.html"><div id="option_icons_current" class="col-xs-4">
+				<img src="img\wallet.png" width="100%">
+				<h3> WALLET </h3>
 			</div></a>
-			<a href="payment.html"><div id="option_icons" class="col-xs-3">
-				<h3>payment</h3>
+			<a href="convert.html"><div id="option_icons" class="col-xs-2">
+				<img src="img\currency.png" width="100%">
+				<h3> CONVERT </h3>
 			</div></a>
-			<a href="saving.html"><div id="option_icons" class="col-xs-3">
-				<h3>saving / budget</h3>
+			<a href="payment.html"><div id="option_icons" class="col-xs-2">
+				<img src="img\clock.png" width="100%">
+				<h3> HISTORY </h3>
 			</div></a>
-			<a href="report.html"><div id="option_icons" class="col-xs-3">
-				<h3>report </h3>
+			<a href="saving.html"><div id="option_icons" class="col-xs-2">
+				<img src="img\locker.png" width="100%">
+				<h3> BUDGETING</h3>
+			</div></a>
+			<a href="report.html"><div id="option_icons" class="col-xs-2">
+				<img src="img\pie-chart.png" width="100%">
+				<h3> STATISTICS </h3>
 			</div></a>
 		</div>
 		
