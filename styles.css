@@ -54,30 +54,24 @@ a {
 	/*background-color: #EDAE49;*/
 	/*background-color:#5A5A5A;*/
 }
-
-
-	#go_back_icon {
-		border:1px solid;
-		width: 100px;
-		height: 100px;
-		/*float: left;*/
-		background-color: #EDAE49;
-	}
 	
 #content_home {
 	/*border: 1px solid;
 	height: 1200px;*/
 	height: auto;
+	padding-bottom: 300px;
 }
 			
 #content_setting {
 	border: 1px solid;
 	height: 400px;
+	padding-bottom: 300px;
 }
 
 #content_option {
-	border: 1px solid;
-	height: 1200px;
+	/*border: 1px solid;*/
+	height: auto;
+	padding-bottom: 300px;
 }
 
 #content_faq {
@@ -206,5 +200,13 @@ a {
 	
 	#back-panel{
 		border:1px solid;
-		height: 50px;
+		height: 100px;
 	}
+	
+		#go_back_icon {
+			border: 0px solid;
+			width: 100px;
+			height: 100px;
+			/*float: left;*/
+			/*background-color: #EDAE49;*/
+		}
