@@ -12,10 +12,6 @@
 		<!-- Latest compiled JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 		<style>
-			#header {
-				border:1px solid;
-				height: 150px;
-			}
 				
 
 				#balance {
@@ -38,32 +34,6 @@
 					
 				}
 			
-			#options {
-				border: 1px solid;
-				height: 300px;
-				/*background-color: #0D324D;*/
-			}
-				.option_icons {
-					border: 1px solid;
-					height: 200px;
-					width: 200px;
-					float: left;
-					margin-top: 20px;
-					margin-left: 35px;
-					background-color: #EDAE49;
-				}
-				
-				.option_icons_current {
-					border: 1px solid;
-					height: 200px;
-					width: 200px;
-					float: left;
-					margin-top: 20px;
-					margin-left: 35px;
-					color: white;
-					background-color: #FFFFFF;
-				}
-			
 			#payment {
 				border: 1px solid;
 				height: 80px;
@@ -76,20 +46,23 @@
 	</head>
 	<body>
 		<div id="header">
-			<div id="icon">
-				<h3> name </h3>
+			<div id="icon" class="col-sm-2">
 			</div>
-			<div id="name">
-				<h1> NAME </h1>
+			<div id="name" class="col-sm-8">
+				<h1 style="margin-top: 30px; font-size: 60px;"> Fine Ances </h1>
 			</div>
-			<a href="setting.html"<div id="setting">
-				<h3>setting</h3>
+			<a href="setting.html"><div id="setting" class="col-sm-2">
+				<img src="img\cog.png" width="100%" id="setting-icon">
 			</div></a>
 		</div>
+		
+		
+		
+		
+		
+		
+		
 		<div id="content_option">
-			<a href="home.html"><div id="go_back_icon">
-				<h3>back</h3>
-			</div></a>
 			
 			<center style=""><h1>PAYMENTS</h1></center>
 			
@@ -117,17 +90,26 @@
 			
 		</div>
 		<div id="options">
-			<a href="convert.html"><div id="conversion_mini" class="option_icons">
-				<h3>convert </h3>
+			<a href="home.html"><div id="option_icons" class="col-xs-4">
+				<img src="img\wallet.png" width="100%">
+				<h3> WALLET </h3>
 			</div></a>
-			><div id="payment_mini" class="option_icons_current">
-				<h3>payment </h3>
-			</div>
-			<a href="saving.html"><div id="saving_budget_mini" class="option_icons">
-				<h3>saving / budget </h3>
+			<a href="convert.html"><div id="option_icons" class="col-xs-2">
+				<img src="img\currency.png" width="100%">
+				<h3> CONVERT </h3>
 			</div></a>
-			<a href="report.html"><div id="report_mini" class="option_icons">
-				<h3>report</h3>
+			<a href="payment.html"><div id="option_icons_current" class="col-xs-2">
+				<img src="img\clock.png" width="100%">
+				<h3> HISTORY </h3>
 			</div></a>
+			<a href="saving.html"><div id="option_icons" class="col-xs-2">
+				<img src="img\locker.png" width="100%">
+				<h3> BUDGETING</h3>
+			</div></a>
+			<a href="report.html"><div id="option_icons" class="col-xs-2">
+				<img src="img\pie-chart.png" width="100%">
+				<h3> STATISTICS </h3>
+			</div></a>
+		</div>
 	</body>
 </html>

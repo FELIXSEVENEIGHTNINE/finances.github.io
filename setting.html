@@ -12,10 +12,6 @@
 		<!-- Latest compiled JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 		<style>
-			#header {
-				border:1px solid;
-				height: 150px;
-			}
 				
 
 				
@@ -47,12 +43,12 @@
 						border-radius: 50px;
 					}
 			
-			#options {
+			#options-setting {
 				border: 1px solid;
 				height: 1100px;
 				/*background-color: #0D324D;*/
 			}
-				.option {
+				.option-setting {
 					border: 1px solid;
 					height: 100px;
 					width: 800px;
@@ -60,7 +56,7 @@
 					margin-left: 25px;
 					/*background-color: #EDAE49;*/
 				}
-					.option_icon {
+					.option_icon-setting {
 						border: 1px solid;
 						height: 50px;
 						width: 50px;
@@ -71,7 +67,7 @@
 						background-color: #0D324D;
 					}
 					
-					.option_name {
+					.option_name-setting {
 						border: 1px solid;
 						height: 50px;
 						width: 500px;
@@ -83,18 +79,20 @@
 	</head>
 	<body>
 		<div id="header">
-			<a href="home.html"><div id="icon">
-				<h3>logo</h3>
-			</div></a>
-			<a href="home.html"><div id="name">
-				<h1>NAME</h1>
+			<div id="icon" class="col-sm-2">
+			</div>
+			<div id="name" class="col-sm-8">
+				<h1 style="margin-top: 30px; font-size: 60px;"> Fine Ances </h1>
+			</div>
+			<a href="setting.html"><div id="setting" class="col-sm-2">
+				<img src="img\cog.png" width="100%" id="setting-icon">
 			</div></a>
 		</div>
+		
+		
+		
+		
 		<div id="content_setting">
-			<a href="home.html"><div id="go_back_icon">
-				<h3>back</h3>
-			</div></a>
-			
 			
 			<div id="account">
 				account info
@@ -110,36 +108,36 @@
 			
 
 		</div>
-		<div id="options">
-			<div id="opt-1" class="option">
-				<div class="option_icon">
+		<div id="options-setting">
+			<div id="opt-1" class="option-setting">
+				<div class="option_icon-setting">
 				</div>
-				<p class="option_name"><b>dark mode</b></p>
+				<p class="option_name-setting"><b>dark mode</b></p>
 			</div>
-			<a href="faq.html"><div id="opt-2" class="option" style="background-color: #EDAE49;">
-				<div class="option_icon">
+			<a href="faq.html"><div id="opt-2" class="option-setting" style="background-color: #EDAE49;">
+				<div class="option_icon-setting">
 				</div>
-				<p class="option_name"><b>faq</b></p>
+				<p class="option_name-setting"><b>faq</b></p>
 			</div></a>
-			<div id="opt-3" class="option">
-				<div class="option_icon">
+			<div id="opt-3" class="option-setting">
+				<div class="option_icon-setting">
 				</div>
-				<p class="option_name"></p>
+				<p class="option_name-setting"></p>
 			</div>
-			<div id="opt-4" class="option">
-				<div class="option_icon">
+			<div id="opt-4" class="option-setting">
+				<div class="option_icon-setting">
 				</div>
-				<p class="option_name"></p>
+				<p class="option_name-setting"></p>
 			</div>
-			<div id="opt-5" class="option">
-				<div class="option_icon">
+			<div id="opt-5" class="option-setting">
+				<div class="option_icon-setting">
 				</div>
-				<p class="option_name"></p>
+				<p class="option_name-setting"></p>
 			</div>
-			<div id="opt-6" class="option">
-				<div class="option_icon">
+			<div id="opt-6" class="option-setting">
+				<div class="option_icon-setting">
 				</div>
-				<p class="option_name"></p>
+				<p class="option_name-setting"></p>
 			</div>
 		</div>
 	</body>
