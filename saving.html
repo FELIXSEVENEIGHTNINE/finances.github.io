@@ -16,12 +16,13 @@
 
 				#budget {
 					border: 1px solid;
-					height: 200px;
+					height: 230px;
 					width: 800px;
 					margin-left: auto;
 					margin-right: auto;
 					margin-top: 50px;
 					/*background-color: #5C9EAD;*/
+					box-shadow: 4px 4px 10px #000000;
 				}
 				
 				#budget h3{
@@ -33,18 +34,23 @@
 				}
 				
 				#budget_manage {
-					border: 1px solid;
+					/*border: 1px solid;*/
 					height: 100px;
 					width: 800px;
 					margin-left: auto;
 					margin-right: auto;
 					margin-top: 0px;
-					background-color: #EDAE49;
+					/*background-color: #EDAE49;*/
 					/*background-color: #5C9EAD;*/
+					
+					/*background-color: #0161e7;*/
 				}
 				
 				#budget_manage h3 {
+					margin-top: 40px;
 					font-size: 30px;
+					color: #0161e7;
+					font-family: "Arial Black";
 				}
 		</style>
 	</head>
@@ -68,26 +74,24 @@
 		
 		<div id="content_option">
 			
-			<center ><h1 style="font-size: 60px;"><img src="img\locker.png" width="10%"> BUDGETTING</h1></center>
+			<center ><h1 class="header-text"><img src="img\locker.png" width="10%"> BUDGETTING</h1></center>
 			
 			<div id="budget">
 				<h3> Rent </h3>
 				<h1>Php 5,000 / 9,110</h1>
 				
 				<a href="add.html"><div id="budget_manage">
-					<h3>add money</h3>
+					<h3>ADD MONEY</h3>
 				</a></div>
 				
 			</div>
-			
-			
-			
+
 			<div id="budget">
 				<h3> College </h3>
 				<h1>Php 69,000,000 / 420,000,000</h1>
 				
 				<a href="add.html"><div id="budget_manage">
-					<h3>add money</h3>
+					<h3>ADD MONEY</h3>
 				</a></div>
 			</div>
 			
@@ -95,16 +99,15 @@
 				<h3> NVIDIA GTX 4020 </h3>
 				<h1>Php 30,000 / 30,000</h1>
 				
-				<a href="add.html"><div id="budget_manage">
-					<h3 class="col-xs-4">recieve</h3>
-					<h3 class="col-xs-4">transfer</h3>
-					<h3 class="col-xs-4">convert</h3>
-				</a></div>
+				<div id="budget_manage">
+					<a href="home.html"><h3 class="col-xs-4">RECIEVE</h3></a>
+					<a href="add.html"><h3 class="col-xs-4">TRANSFER</h3></a>
+					<a href="home.html"><h3 class="col-xs-4">CONVERT</h3></a>
+				</div>
 			</div>
 			
-			<div id="budget">
-				<h3> </h3>
-				<h1>add budget</h1>
+			<div id="add_balance">
+				<h3>ADD BUDGET</h3>
 			</div>
 		
 			

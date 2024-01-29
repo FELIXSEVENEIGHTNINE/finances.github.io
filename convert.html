@@ -20,33 +20,84 @@
 					width: 150px;
 					margin-left: auto;
 					margin-right: auto;
-					margin-top: 50px;
+					margin-top: 10px;
 					/*background-color: #5C9EAD;*/
 				}
-				
-				#all_countries {
-					/*border: 1px solid;*/
-					height: 150px;
+						
+				iframe {
 					width: 900px;
-					margin-left: auto;
-					margin-right: auto;
-					margin-top: 50px;
-					/*background-color: #5C9EAD;*/
+					height: 500px;
+					border: 0px;
 				}
 				
-					#country {
+				
+				
+				
+				
+				#converter {
+					border: 1px solid;
+					height: auto;
+				}
+				
+					#previous {
 						border: 1px solid;
-						height: 150px;
-						width: 200px;
-						float: left;
-						margin-left: 18px;
-						/*background-color: #5C9EAD;*/
+						width: 80px;
+						height: 50px;
 					}
+					
+					/*#converter
+					#current {
+						/*z-index: 1;
+						position: absolute;
+						border: 1px solid;
+						width: 400px;
+						height: 500px;
+					}*/
+					
+					#next {
+						border: 1px solid;
+						width: 80px;
+						height: 50px;
+					}
+					
+					
+					
+					
+					
+					
+					
+					
 					
 					#calculator 
 					{
-						/*border:1px solid;*/
+						margin-top: 30px;
+						border:1px solid;
 						height: 1000px;
+					}
+					
+						#show_solution {
+							border: 1px solid;
+							margin-top: 20px;
+							width: 600px;
+							height: 200px;
+						}
+					
+				#top_row {
+					/*border:1px solid;*/
+					height: 240px;
+				}
+				
+				#middle_row {
+					/*border:1px solid;*/
+					height: 150px;
+				}
+				
+					.middle_button {
+						float: left;
+						border:1px solid;
+						width: 150px;
+						height: 150px;
+						margin-left: 75px;
 					}
 		</style>
 	</head>
@@ -69,48 +120,105 @@
 		
 		<div id="content_option">
 			
-			<center ><h1 style="font-size: 60px;"><img src="img\currency.png" width="10%"> CONVERSIONS</h1></center>
+			<center ><h1 class="header-text"><img src="img\currency.png" width="10%"> CONVERSIONS</h1></center>
 			
+			<h2>Your country's currency:</h2>
 			<div id="dollarino">
 				<h1>Php 51</h1>
 			</div>
 			
-			<div id="all_countries">
-				<div id="country" class="col-xs-3">
-					<h1>USD 1</h1>
-					<h3>United States</h3>
+			<!--<div id="converter">
+				<div id="previous">
+				</div>-->
+				<div id="current">
+					<iframe src="convert_iframe_1.html">
+					</iframe>
+					<iframe src="convert_iframe_2.html">
+					</iframe>
 				</div>
-				<div id="country" class="col-xs-3">
-					<h1>JPY 2</h1>
-					<h3>Japan</h3>
+			<!--	<div id="next">
 				</div>
-				<div id="country" class="col-xs-3">
-					<h1>AUD 3</h1>
-					<h3>Australia</h3>
-				</div>
-				<div id="country" class="col-xs-3">
-					<h1>RUP 4</h1>
-					<h3>India</h3>
-				</div>
-			</div>
+			</div>-->
 			
-			<div id="all_countries">
-				<div id="country" class="col-xs-4">
-					<h1>VND 5</h1>
-					<h3>Vietnam</h3>
-				</div>
-				<div id="country" class="col-xs-4">
-					<h1>CND 6</h1>
-					<h3>Canada</h3>
-				</div>
-				<div id="country" class="col-xs-4">
-					<h1>EURO 7</h1>
-					<h3>Europe</h3>
-				</div>
-			</div>
-			
+			<!--<center ><h1>CALCULATOR</h1></center>
 			<div id="calculator">
-			</div>
+				<div id="top_row">
+					<div class="col-xs-2">
+					</div>
+					<div id="show_solution" class="col-xs-8">
+					</div>
+					<div class="col-xs-2">
+					</div>
+				</div>
+				<div id="middle_row">
+					<div class="middle_button" class="col-xs-3">
+						<h1 style="margin-top: 50px;">C</h1>
+					</div>
+					<div class="middle_button" class="col-xs-3">
+						<h1 style="margin-top: 50px;">/</h1>
+					</div>
+					<div class="middle_button" class="col-xs-3">
+						<h1 style="margin-top: 50px;">*</h1>
+					</div>
+					<div class="middle_button" class="col-xs-3">
+						<h1 style="margin-top: 50px;">BACK</h1>
+					</div>
+				</div>
+				<div id="middle_row">
+					<div class="middle_button" class="col-xs-3">
+						<h1 style="margin-top: 50px;">7</h1>
+					</div>
+					<div class="middle_button" class="col-xs-3">
+						<h1 style="margin-top: 50px;">8</h1>
+					</div>
+					<div class="middle_button" class="col-xs-3">
+						<h1 style="margin-top: 50px;">9</h1>
+					</div>
+					<div class="middle_button" class="col-xs-3">
+						<h1 style="margin-top: 50px;">-</h1>
+					</div>
+				</div>
+				<div id="middle_row">
+					<div class="middle_button" class="col-xs-3">
+						<h1 style="margin-top: 50px;">4</h1>
+					</div>
+					<div class="middle_button" class="col-xs-3">
+						<h1 style="margin-top: 50px;">5</h1>
+					</div>
+					<div class="middle_button" class="col-xs-3">
+						<h1 style="margin-top: 50px;">6</h1>
+					</div>
+					<div class="middle_button" class="col-xs-3">
+						<h1 style="margin-top: 50px;">+</h1>
+					</div>
+				</div>
+				<div id="middle_row">
+					<div class="middle_button" class="col-xs-3">
+						<h1 style="margin-top: 50px;">1</h1>
+					</div>
+					<div class="middle_button" class="col-xs-3">
+						<h1 style="margin-top: 50px;">2</h1>
+					</div>
+					<div class="middle_button" class="col-xs-3">
+						<h1 style="margin-top: 50px;">3</h1>
+					</div>
+					<div class="middle_button" class="col-xs-3">
+						<h1 style="margin-top: 50px;">=</h1>
+					</div>
+				</div>
+				<div id="middle_row">
+					<div class="middle_button" class="col-xs-4" style="width:375px;">
+						<h1 style="margin-top: 50px;">0</h1>
+					</div>
+					<div class="middle_button" class="col-xs-4">
+						<h1 style="margin-top: 50px;">.</h1>
+					</div>
+					<div class="middle_button" class="col-xs-4">
+						<h1 style="margin-top: 50px;">=</h1>
+					</div>
+				</div>
+			</div>-->
+			
 		
 			
 		</div>
