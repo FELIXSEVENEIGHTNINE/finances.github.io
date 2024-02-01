@@ -1,12 +1,73 @@
 #banner {
 	border:1px solid;
-	width: 700px;
-	height: 700px;
+	width: 800px;
+	height: 800px;
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+	background-color: White;
+	box-shadow: 8px 8px 10px #000000;
 }
+
+	#banner h1 {
+		color: Black;
+		font-size: 80px;
+	}
+	
+	#banner p {
+		font-size: 30px;
+	}
+	
+	#username, #password {
+		border:1px solid;
+		width: 400px;
+		height: 50px;
+		margin-left :auto;
+		margin-right :auto;
+	}
+			
+	#banner #register {
+		border:1px solid;
+		width: 200px;
+		height: 60px;
+		margin-left :auto;
+		margin-right :auto;
+		/*background-color: #EDAE49;*/
+		/*background-color: #f9f777;*/
+		background-color: #ffc300;
+		border-radius: 100px;
+	}
+			
+	#banner a {
+		text-decoration: none;
+	}
+		
+		#banner input {
+			height: 80px;
+			width: 500px;
+			font-size: 40px;
+			color: Black;
+		}
+
+		#banner h3 {
+			color: Black;
+			margin-top: 12px;
+			font-size: 30px;
+			text-decoration: none;
+		}
+		
+		#banner h3 a {
+			text-decoration: none;
+		}
+	
+	
+	
+	
+	
+	
+	
+	
 
 
 
@@ -30,7 +91,14 @@ a {
 	height: 150px;
 	border-bottom: 1px solid;
 	/*font-family: Aptos;*/
+	/*background-color: White;*/
+	/*background-color:#dbdbdb;*/
+	background-color:#e4e4e4;
 }
+
+	#header h1 {
+		font-weight: bold;
+	}
 
 #icon {
 	/*border:1px solid;*/
@@ -53,12 +121,14 @@ a {
 }
 #setting {
 	/*border: 1px solid;*/
-	width: 150px;
-	height: 150px;
+	width: 140px;
+	height: 140px;
 	float: left;
-	margin-top: 10px;
+	margin-top: 5px;
 	/*background-color: #EDAE49;*/
 	/*background-color:#5A5A5A;*/
+	
+	/*background-color: #f9f777;*/
 }
 	
 #content_home {
@@ -81,8 +151,9 @@ a {
 }
 
 #content_faq {
-	border: 1px solid;
-	height: 1200px;
+	/*border: 1px solid*/
+	/*height: 1200px;*/
+	padding-bottom: 300px;
 }
 
 #options {
@@ -91,9 +162,9 @@ a {
 	bottom: 0;
 	border: 1px solid;
 	height: 250px;
-	background-color: White;
 	/*background-color: #0D324D;*/
 	z-index: 1;
+	background-color:#e4e4e4;
 }
 
 .header-text {
@@ -101,7 +172,7 @@ a {
 }
 
 	#option_icons {
-		/*border: 1px solid;*/
+		border: 0px solid;
 		height: 150px;
 		width: 150px;
 		margin-top: 20px;
@@ -127,6 +198,7 @@ a {
 			/*border: 1px solid;*/
 			left: 0;
 			right: 0;
+			font-weight: bold;
 		}
 	
 	#option_icons_current {
@@ -138,7 +210,8 @@ a {
 		margin-left: 35px;
 		/*background-color: #48B8D0;*/
 		/*background-color: #d9d9d9;*/
-		background-color: #ffc300;
+		/*background-color: #ffc300;*/
+		background-color: #ffda00;
 		color: Black;
 		border-radius: 30px;
 	}
@@ -153,6 +226,7 @@ a {
 			/*border: 1px solid;*/
 			left: 0;
 			right: 0;
+			font-weight: bold;
 		}
 
 		#balance {
@@ -194,11 +268,14 @@ a {
 				background-color: #FF6666;
 				float: left;
 				/*color: red;*/
-				color:#FF6666;
+				/*color:#FF6666;*/
+				
+				font-family: "Arial Black";
 			}
 			
 			#balance_edit-remove h2{
 				color: Black;
+				/*color:#FF6666;*/
 			}
 			
 			#balance h1{
@@ -260,14 +337,15 @@ a {
 	}
 	
 	#back-panel{
-		border:1px solid;
+		border:0px solid;
 		height: 80px;
 	}
 	
 		#go_back_icon {
 			border: 0px solid;
 			width: 100px;
-			height: 100px;
+			/*height: 100px;*/
+			margin-left: 20px;
 			/*float: left;*/
 			/*background-color: #EDAE49;*/
 		}
@@ -286,9 +364,18 @@ a {
 				
 					#country {
 						border: 1px solid;
-						height: 150px;
+						height: 180px;
 						width: 200px;
 						float: left;
 						margin-left: 18px;
 						/*background-color: #5C9EAD;*/
+					}
+					
+					#country h3 {
+						font-weight: bold;
+						font-size: 26px;
+					}
+					
+					#country h1 {
+						font-weight: bold;
 					}

@@ -16,48 +16,70 @@
 
 				#dollarino {
 					border: 1px solid;
-					height: 100px;
-					width: 150px;
+					height: 180px;
+					width: 200px;
 					margin-left: auto;
 					margin-right: auto;
 					margin-top: 10px;
 					/*background-color: #5C9EAD;*/
 				}
-						
-				iframe {
-					width: 900px;
-					height: 500px;
-					border: 0px;
+				
+				#dollarino h3 {
+					font-weight: bold;
+					font-size: 26px;
 				}
+				
+				#dollarino h1 {
+					font-weight: bold;
+				}
+						
+				
 				
 				
 				
 				
 				
 				#converter {
-					border: 1px solid;
+					border: 0px solid;
 					height: auto;
+					margin-top: 50px;
 				}
 				
 					#previous {
-						border: 1px solid;
-						width: 80px;
-						height: 50px;
+						border: 0px solid;
+						width: 100px;
+						height: 500px;
+						float: left;
+						padding-top: 20%;
 					}
 					
-					/*#converter
 					#current {
+						border: 0px solid;
+						width: 770px;
+						height: 500px;
+						float: left;
+						
+						
+						
 						/*z-index: 1;
 						position: absolute;
-						border: 1px solid;
+						
 						width: 400px;
-						height: 500px;
-					}*/
+						height: 500px;*/
+					}
+					
+					iframe {
+						width: 740px;
+						height: 470px;
+						border: 0px solid;
+					}
 					
 					#next {
-						border: 1px solid;
-						width: 80px;
-						height: 50px;
+						border: 0px solid;
+						width:100px;
+						height: 500px;
+						float: left;
+						padding-top: 20%;
 					}
 					
 					
@@ -99,7 +121,30 @@
 						height: 150px;
 						margin-left: 75px;
 					}
+				
+				
+				#conversions {
+					border: 0px solid;
+					height: auto;
+					margin-top: 50px;
+				}
+				
+				#thirdparty-convert {
+					width: 900px;
+					height: 700px;
+					border:1px solid;
+				}
 		</style>
+		
+		<script>
+			function previous() {
+				document.getElementById("myframe").src = "convert_iframe_1.html"
+			}
+		
+			function next() {
+				document.getElementById("myframe").src = "convert_iframe_2.html"
+			}
+		</script>
 	</head>
 	<body>
 		<div id="header">
@@ -107,7 +152,7 @@
 				<img src="img\plant.png" width="100%">
 			</div>
 			<div id="name" class="col-xs-8">
-				<h1 style="margin-top: 30px; font-size: 60px;"> Fine Ances </h1>
+				<h1 style="margin-top: 30px; font-size: 60px;"> FINE ANCES </h1>
 			</div>
 			<a href="setting.html"><div id="setting" class="col-xs-2">
 				<img src="img\setting.png" width="100%" id="setting-icon">
@@ -125,20 +170,27 @@
 			<h2>Your country's currency:</h2>
 			<div id="dollarino">
 				<h1>Php 51</h1>
+				<img src="img\flags\ph.svg" width="30%">
+				<h3> Philippines</h3>
 			</div>
 			
-			<!--<div id="converter">
-				<div id="previous">
-				</div>-->
-				<div id="current">
-					<iframe src="convert_iframe_1.html">
-					</iframe>
-					<iframe src="convert_iframe_2.html">
+			<div id="converter">
+				<div id="previous" class="col-xs-2" onclick="previous()">
+					<img src="img\back.png" width="100%">
+				</div>
+				<div id="current" class="col-xs-8">
+					<iframe src="convert_iframe_1.html" id="myframe">
 					</iframe>
 				</div>
-			<!--	<div id="next">
+				<div id="next" class="col-xs-2" onclick="next()">
+					<img src="img\next.png" width="100%">
 				</div>
-			</div>-->
+			</div>
+			
+			<div id="conversions">
+					<iframe src="https://www.calculator.net/currency-calculator.html" id="thirdparty-convert" scrolling="no">
+					</iframe>
+			</div>
 			
 			<!--<center ><h1>CALCULATOR</h1></center>
 			<div id="calculator">

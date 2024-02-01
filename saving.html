@@ -52,6 +52,26 @@
 					color: #0161e7;
 					font-family: "Arial Black";
 				}
+				
+				
+				#budget-looks h3 {
+					font-weight: bold;
+				}
+				
+				#budget-looks{
+					margin-top: -5px;
+					padding-top: 5px;
+					margin-bottom: -10px;
+					padding-bottom: 10px;
+				}
+				
+				.incomplete {
+					background-color: #019fff;
+				}
+				
+				.complete {
+					background-color: #95bf44;
+				}
 		</style>
 	</head>
 	<body>
@@ -60,7 +80,7 @@
 				<img src="img\plant.png" width="100%">
 			</div>
 			<div id="name" class="col-xs-8">
-				<h1 style="margin-top: 30px; font-size: 60px;"> Fine Ances </h1>
+				<h1 style="margin-top: 30px; font-size: 60px;"> FINE ANCES </h1>
 			</div>
 			<a href="setting.html"><div id="setting" class="col-xs-2">
 				<img src="img\setting.png" width="100%" id="setting-icon">
@@ -77,8 +97,23 @@
 			<center ><h1 class="header-text"><img src="img\locker.png" width="10%"> BUDGETTING</h1></center>
 			
 			<div id="budget">
-				<h3> Rent </h3>
-				<h1>Php 5,000 / 9,110</h1>
+				<div id="budget-looks" class="incomplete">
+					<h3> YOUR MONTHLY BUDGET </h3>
+					<h1>Php 20,000 / 30,000</h1>
+				</div>
+				
+				<div id="budget_manage">
+					<h3>CHANGE BUDGET</h3>
+				</a></div>
+			</div>
+			
+			
+			
+			<div id="budget">
+				<div id="budget-looks" class="incomplete">
+					<h3> Rent </h3>
+					<h1>Php 5,000 / 9,110</h1>
+				</div>
 				
 				<a href="add.html"><div id="budget_manage">
 					<h3>ADD MONEY</h3>
@@ -87,8 +122,10 @@
 			</div>
 
 			<div id="budget">
-				<h3> College </h3>
-				<h1>Php 69,000,000 / 420,000,000</h1>
+				<div id="budget-looks" class="incomplete">
+					<h3> College </h3>
+					<h1>Php 69,000,000 / 420,000,000</h1>
+				</div>
 				
 				<a href="add.html"><div id="budget_manage">
 					<h3>ADD MONEY</h3>
@@ -96,11 +133,12 @@
 			</div>
 			
 			<div id="budget">
-				<h3> NVIDIA GTX 4020 </h3>
-				<h1>Php 30,000 / 30,000</h1>
-				
+				<div id="budget-looks" class="complete">
+					<h3> NVIDIA GTX 4020 </h3>
+					<h1>Php 30,000 / 30,000</h1>
+				</div>
 				<div id="budget_manage">
-					<a href="home.html"><h3 class="col-xs-4">RECIEVE</h3></a>
+					<a href="home.html"><h3 class="col-xs-4">RECEIVE</h3></a>
 					<a href="add.html"><h3 class="col-xs-4">TRANSFER</h3></a>
 					<a href="home.html"><h3 class="col-xs-4">CONVERT</h3></a>
 				</div>
